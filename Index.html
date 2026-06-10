@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Cup Tickets 2026 — Secure Match Bookings</title>
+  <meta name="description" content="Buy official World Cup 2026 tickets. Fast, secure, premium category assignments delivered directly via WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">MATCH<span>GATE</span></a>
+      <ul class="nav-links">
+        <li><a href="#matches">Matches</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#venues">Venues</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#" class="nav-btn" id="navBuyBtn">Buy Tickets</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#matches">Matches</a>
+    <a href="#packages">Packages</a>
+    <a href="#venues">Venues</a>
+    <a href="#faq">FAQ</a>
+    <a href="#" class="nav-btn" id="mobileNavBuyBtn">Buy Tickets</a>
+  </div>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-tag">Official Ticket Broker Service</div>
+      <h1>SECURE YOUR SEATS FOR THE <span>WORLD CUP 2026</span></h1>
+      <p>Experience the greatest football tournament on earth live across USA, Mexico, and Canada. Real-time availability, premium seating block upgrades, and instant checkout verification.</p>
+      <div class="hero-btns">
+        <a href="#matches" class="btn-primary">View Match Schedule</a>
+        <a href="#" class="btn-secondary" id="ctaWhatsapp">Speak with an Agent</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="matches-section" id="matches">
+    <div class="container">
+      <div class="section-header">
+        <h2>AVAILABLE MATCH FIXTURES</h2>
+        <p>Select your favorite match, adjust seating parameters, and secure reservation passes via instant WhatsApp checkout processing.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Fixtures</button>
+        <button class="filter-btn" data-filter="group">Group Stage</button>
+        <button class="filter-btn" data-filter="knockout">Knockouts</button>
+        <button class="filter-btn" data-filter="final">The Grand Final</button>
+      </div>
+
+      <div class="matches-grid" id="matchesGrid">
+        </div>
+    </div>
+  </section>
+
+  <section class="packages-section" id="packages">
+    <div class="container">
+      <div class="section-header">
+        <h2>VIP HOSPITALITY & PACKAGES</h2>
+        <p>Complete premium premium experiences featuring high-end lounge access, star accommodations, and guaranteed tickets.</p>
+      </div>
+
+      <div class="packages-grid">
+        <div class="package-card">
+          <div class="pkg-img" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop') center/cover;">
+            <span class="pkg-badge">Popular</span>
+          </div>
+          <div class="pkg-body">
+            <h3>Elite Follow-Your-Team Package</h3>
+            <p>Includes 3 Group Stage match passes, 4-star city center hotel lodging options, matchday transit lines, and matchday souvenirs.</p>
+            
+            <div style="margin: 15px 0; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border); padding-top: 15px;">
+              <span style="font-size: 11px; font-weight: 600; color: var(--muted);">TRAVELERS PACK:</span>
+              <select id="pkg-qty-elite" style="background: var(--bg); color: var(--gold); border: 1px solid var(--border); padding: 4px 10px; border-radius: 4px; font-weight: bold; font-size: 13px;">
+                <option value="1">1 Person</option>
+                <option value="2" selected>2 Persons</option>
+                <option value="3">3 Persons</option>
+                <option value="4">4 Persons</option>
+              </select>
+            </div>
+
+            <div class="pkg-footer">
+              <div>
+                <span class="pkg-price-lbl">Per Individual</span>
+                <span class="pkg-price-val">$2,450</span>
+              </div>
+              <button class="btn-pkg" data-package="Elite Follow-Your-Team" data-price="2450" data-select-id="pkg-qty-elite">Inquire Box</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-card">
+          <div class="pkg-img" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1540747737956-37872a7e86e5?q=80&w=600&auto=format&fit=crop') center/cover;">
+            <span class="pkg-badge" style="background: var(--gold); color: #000;">Premium</span>
+          </div>
+          <div class="pkg-body">
+            <h3>VIP Stadium Skybox Experience</h3>
+            <p>Access exclusive private suite catering boxes, premium five-star five-star luxury resorts, private airport escorts, and legendary pre-match fan meets.</p>
+            
+            <div style="margin: 15px 0; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border); padding-top: 15px;">
+              <span style="font-size: 11px; font-weight: 600; color: var(--muted);">TRAVELERS PACK:</span>
+              <select id="pkg-qty-vip" style="background: var(--bg); color: var(--gold); border: 1px solid var(--border); padding: 4px 10px; border-radius: 4px; font-weight: bold; font-size: 13px;">
+                <option value="1">1 Person</option>
+                <option value="2">2 Persons</option>
+                <option value="3">3 Persons</option>
+                <option value="4">4 Persons</option>
+              </select>
+            </div>
+
+            <div class="pkg-footer">
+              <div>
+                <span class="pkg-price-lbl">Per Individual</span>
+                <span class="pkg-price-val">$5,900</span>
+              </div>
+              <button class="btn-pkg" data-package="VIP Stadium Skybox" data-price="5900" data-select-id="pkg-qty-vip">Inquire Box</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="venues-section" id="venues">
+    <div class="container">
+      <div class="section-header">
+        <h2>ELITE HOST STADIUMS</h2>
+        <p>Explore some of the magnificent architectures hosting historical match actions across North America.</p>
+      </div>
+      <div class="venues-grid">
+        <div class="venue-card">
+          <div class="v-img" style="background: url('https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=400&auto=format&fit=crop') center/cover;"></div>
+          <h4>Estadio Azteca</h4>
+          <p>Mexico City, Mexico</p>
+        </div>
+        <div class="venue-card">
+          <div class="v-img" style="background: url('https://images.unsplash.com/photo-1569512441093-655ab895653c?q=80&w=400&auto=format&fit=crop') center/cover;"></div>
+          <h4>MetLife Stadium</h4>
+          <p>New York / New Jersey, USA</p>
+        </div>
+        <div class="venue-card">
+          <div class="v-img" style="background: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=400&auto=format&fit=crop') center/cover;"></div>
+          <h4>SoFi Stadium</h4>
+          <p>Los Angeles, USA</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>QUESTIONS & ANSWERS</h2>
+        <p>Everything you need to understand about our security structures, verification transfers, and ticket pass fulfillment rules.</p>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-q">Are these passes officially verified? <span>+</span></div>
+          <div class="faq-a">Yes, absolutely. All seat blocks listed across our systems are 100% authenticated tickets sourced directly through licensed corporate brokers. Ticket allocations are digitally configured to match user parameters safely.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do I receive my ticket credentials? <span>+</span></div>
+          <div class="faq-a">Once payment parameters are processed and validated, secure verified digital links, e-ticket bar barcodes, and seating entry assignments are generated and delivered directly to you via WhatsApp or email.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What payment methods can I use? <span>+</span></div>
+          <div class="faq-a">We accommodate a broad variety of secure processing networks including PayPal channels, credit/debit card transfers, direct bank routing, and secondary alternative payment platforms.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-info">
+          <a href="#" class="footer-logo">MATCH<span>GATE</span></a>
+          <p>The premium independent global gateway ticket reseller choice providing trusted and secure access to high-demand World Cup live sports events worldwide.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Sitemap Link</h4>
+          <ul>
+            <li><a href="#matches">Fixtures Catalog</a></li>
+            <li><a href="#packages">VIP Experience Packs</a></li>
+            <li><a href="#venues">Stadium Guides</a></li>
+            <li><a href="#" id="footerWhatsapp">Instant Helpline Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MatchGate Tickets Marketplace. All corporate rights reserved. This platform is a secondary independent ticket market network.</p>
+        <div class="footer-badges">
+          <span>🔒 SSL Encrypted Checkout</span>
+          <span>✅ 100% Buyer Guarantee</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="float-wa" id="floatWA" title="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="white">
+      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.737 5.469 2.027 7.77L0 32l8.469-2.001A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.771-1.849l-.486-.288-5.028 1.188 1.216-4.899-.317-.503A13.267 13.267 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667c7.364 0 13.333 5.969 13.333 13.333 0 7.364-5.969 13.333-13.333 13.333zm7.33-10.154c-.401-.202-2.377-1.173-2.746-1.307-.37-.134-.638-.202-.908.202-.27.403-1.042 1.307-1.277 1.577-.235.269-.47.303-.871.101-.402-.202-1.697-.625-3.234-1.996-1.196-1.067-2.004-2.384-2.239-2.787-.236-.403-.025-.621.176-.821.181-.181.402-.47.604-.706.202-.235.269-.403.403-.672.134-.269.067-.504-.034-.706-.1-.202-.908-2.185-1.244-2.992-.328-.788-.661-.682-.908-.694-.227-.01-.487-.013-.748-.013-.26 0-.682.097-1.04.494-.356.396-1.362 1.33-1.362 3.242 0 1.912 1.394 3.759 1.589 4.022.195.263 2.742 4.188 6.643 5.875.928.4 1.651.64 2.215.82.932.296 1.78.254 2.45.154.747-.111 2.3-1.396 2.622-2.746.323-1.35.323-2.51.226-2.746-.097-.235-.356-.37-.757-.571z"/>
+    </svg>
+  </a>
+
+  <div id="seatingModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 13, 18, 0.95); z-index: 2000; align-items: center; justify-content: center; padding: 20px;">
+    <div style="background: var(--surface); border: 1px solid var(--border); width: 100%; max-width: 500px; border-radius: 12px; padding: 20px; position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+      <button onclick="closeStadiumMap()" style="position: absolute; top: 15px; right: 15px; background: none; border: none; color: var(--muted); font-size: 22px; cursor: pointer; font-weight: bold; outline: none;">&times;</button>
+      
+      <h3 style="font-family: 'Oswald', sans-serif; color: var(--gold); font-size: 18px; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">🏟️ Stadium Seating Layout Blueprint</h3>
+      
+      <div style="display: flex; flex-direction: column; gap: 8px; margin: 20px 0; background: #07090d; padding: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
+        <div style="background: #1e293b; color: #94a3b8; text-align: center; padding: 6px; font-weight: bold; font-size: 11px; border-radius: 4px; letter-spacing: 2px;">PITCH / PLAYING FIELD</div>
+        <div style="background: rgba(0, 230, 118, 0.15); border: 1px solid var(--green); color: var(--green); text-align: center; padding: 12px; font-weight: bold; font-size: 12px; border-radius: 4px;">💎 VIP SUITE BOXES (Field Level)</div>
+        <div style="background: rgba(245, 200, 66, 0.15); border: 1px solid var(--gold); color: var(--gold); text-align: center; padding: 12px; font-weight: bold; font-size: 12px; border-radius: 4px;">🎟️ CATEGORY 1 (Lower Bowl Sectors)</div>
+        <div style="background: rgba(232, 234, 240, 0.1); border: 1px solid #475569; color: var(--text); text-align: center; padding: 12px; font-weight: bold; font-size: 12px; border-radius: 4px;">🎟️ CATEGORY 2 (Mid-Tier Club Deck)</div>
+        <div style="background: rgba(107, 114, 128, 0.15); border: 1px solid var(--muted); color: var(--muted); text-align: center; padding: 12px; font-weight: bold; font-size: 12px; border-radius: 4px;">🎟️ CATEGORY 3 (Upper Bowl Skyview)</div>
+      </div>
+      
+      <p style="font-size: 12px; color: var(--muted); line-height: 1.5; margin: 0;">*Note: Exact block allocation entry passes, row assignments, and gate numbers will be distributed securely via digital format immediately upon completion of processing payment checkouts.*</p>
+    </div>
+  </div>
+
+  <script src="matches.js"></script>
+  <script src="whatsapp.js"></script>
+  <script src="faq.js"></script>
+</body>
+</html>
